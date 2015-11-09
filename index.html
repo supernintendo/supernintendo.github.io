@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
+        <link href="index.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <img alt="matyi.net" src="skeleton.gif">
+        <p id="quote" class="hide">
+            "It is not necessary for the public to know whether I am joking
+            or whether I am serious, just as it is not necessary for me to
+            know it myself." - <i>Salvador Dali</i>
+        </p>
+        <div id="cursor"></div>
+        <ul>
+            <li><a href="https://github.com/supernintendo">github</a></li>
+            <li><a href="https://twitter.com/funsummerdays">twitter</a></li>
+            <li>michaelmatyi (at) icloud.com</li>
+        </ul>
+        <script>
+         var cursorOffset = {
+             left: 0,
+             top: 0
+         };
+         document.documentElement.addEventListener("mousemove", function(e) {
+             var cursor = document.getElementById("cursor");
+
+             cursor.style.left = (e.pageX - cursorOffset.left) + "px";
+             cursor.style.top = (e.pageY - cursorOffset.top) + "px";
+         }, false);
+        </script>
+    </body>
+</html>
