@@ -40,7 +40,7 @@ html, body {
     font-family: 'Crimson Text', serif;
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
     text-align: center;
 }
 a {
