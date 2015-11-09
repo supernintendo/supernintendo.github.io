@@ -22,7 +22,6 @@
 }
 @media all and (min-width: 641px) {
     html, body {
-        cursor: none;
         font-size: 16px;
     }
     a {
