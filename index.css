@@ -33,21 +33,21 @@
         transition: 0.4s border linear;
     }
     a:hover {
-        border-bottom-width: 60000px;
+        border-bottom-width: 5px;
         cursor: none;
-        -webkit-transition: 64s border-bottom-width ease-in,
+        -webkit-transition: 0.5s border-bottom-width ease-in,
                             0.8s border-bottom-color linear,
                             0.8s color linear,
                             0.8s background linear;
-        -moz-transition: 64s border-bottom-width ease-in,
+        -moz-transition: 0.5s border-bottom-width ease-in,
                     0.8s border-bottom-color linear,
                     0.8s color linear,
                     0.8s background linear;
-        -o-transition: 64s border-bottom-width ease-in,
+        -o-transition: 0.5s border-bottom-width ease-in,
                        0.8s border-bottom-color linear,
                        0.8s color linear,
                        0.8s background linear;
-        transition: 64s border-bottom-width ease-in,
+        transition: 0.5s border-bottom-width ease-in,
                     0.8s border-bottom-color linear,
                     0.8s color linear,
                     0.8s background linear;
@@ -57,7 +57,7 @@
     }
 }
 ::-moz-selection {
-    background: #Fc20021;
+    background: #F20021;
 }
 ::selection {
     background: #F20021;
@@ -84,20 +84,20 @@ a {
 a:hover {
     color: #FFFFFF;
     background: #280343;
-    border-bottom-color: #280343;
-    -webkit-transition: 22s border-bottom-width ease-in,
+    border-bottom-color: #0A7B00;
+    -webkit-transition: 0.5s border-bottom-width ease-in,
                 0.4s border-bottom-color linear,
                 0.4s color linear,
                 0.4s background linear;
-    -moz-transition: 22s border-bottom-width ease-in,
+    -moz-transition: 0.5s border-bottom-width ease-in,
                 0.4s border-bottom-color linear,
                 0.4s color linear,
                 0.4s background linear;
-    -o-transition: 22s border-bottom-width ease-in,
+    -o-transition: 0.5s border-bottom-width ease-in,
                 0.4s border-bottom-color linear,
                 0.4s color linear,
                 0.4s background linear;
-    transition: 22s border-bottom-width ease-in,
+    transition: 0.5s border-bottom-width ease-in,
                 0.4s border-bottom-color linear,
                 0.4s color linear,
                 0.4s background linear;
