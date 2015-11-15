@@ -1,1 +1,1 @@
-![Moongate](http://matyi.net/screenshot.png)
+[![Moongate](http://matyi.net/screenshot.png)](http://matyi.net)
