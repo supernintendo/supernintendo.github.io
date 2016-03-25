@@ -1,1 +1,1 @@
-[![matyi.net](http://matyi.net/screenshot.gif)](http://matyi.net)
+[![matyi.net](http://matyi.net/img/screenshot.gif)](http://matyi.net)
