@@ -1,6 +1,0 @@
-* Hello
-This is a test.
-- Foo
-- Bar
-- Lorem
-- Ipsum
