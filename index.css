@@ -9,6 +9,7 @@ body, html {
 }
 html {
     background: #FBFBFB;
+    background-image: url('img/bg.png');
 }
 ::-moz-selection {
     background: #000000;
