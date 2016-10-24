@@ -79,7 +79,7 @@ a:hover {
     vertical-align: bottom;
 }
 .most-height {
-    height: 19rem;
+    height: 18rem;
 }
 .hide {
     display: none;
@@ -91,13 +91,17 @@ a:hover {
 #links-container {
     display: inline-block;
 }
+#links {
+    margin: 0;
+}
 #links > li:nth-child(1) > a { border-bottom-color: #3004CF; }
 #links > li:nth-child(2) > a { border-bottom-color: #429867; }
 #links > li:nth-child(3) > a { border-bottom-color: #FAB243; }
 #links > li:nth-child(4) > a { border-bottom-color: #E02130; }
+#links > li:nth-child(5) > a { border-bottom-color: #7E21D4; }
 #skeleton-container {
     display: inline-block;
-    margin-top: 1.275rem;
+    margin-top: 0.5rem;
 }
 #skeleton-container > svg {
     fill-rule: evenodd;
@@ -105,6 +109,7 @@ a:hover {
     stroke-linejoin: round;
     stroke-miterlimit: 1.41421;
     overflow: visible;
+    width: 5rem;
 }
 #skeleton > g {
     animation-name: fade;
@@ -126,5 +131,3 @@ a:hover {
 #skeleton > g:nth-child(15) { animation-duration: 5000ms; }
 #skeleton > g:nth-child(16) { animation-duration: 5400ms; }
 #skeleton > g:nth-child(17) { animation-duration: 5800ms; }
-
-
