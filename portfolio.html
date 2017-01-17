@@ -1,249 +1,81 @@
-<!doctype html>
-<html>
+<!-- matyi.net -->
+<!DOCTYPE html>
+<html ⚡>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+        <meta name="Description" content="Official website of Michael Matyi, software developer and multimedia artist. matyi.net, matyi, Michael Matyi">
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
         <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
         <link href="favicon.ico" rel="icon" type="image/x-icon">
-        <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
-        <title>portfolio</title>
-        <style type="text/css">
-         ::selection {
-             background: #85D3E0; /* WebKit/Blink Browsers */
-         }
-         ::-moz-selection {
-             background: #85D3E0; /* Gecko Browsers */
-         }
-         html, body {
-             background: #211919;
-             color: #F2F2F2;
-             font-family: 'Crimson Text', serif;
-             font-size: 24px;
-             margin: 0;
-             padding: 0 0 1.25rem 0;
-             text-align: center;
-         }
-         a {
-             color: #A27098;
-             text-decoration: none;
-         }
-         a:not(.no-underline):hover {
-             -webkit-transition: border-bottom-width 0.1s;
-             transition: border-bottom-width 0.1s;
-             border-bottom: 0.2rem solid #825078;
-         }
-         a.low {
-             padding-bottom: 0.5rem;
-         }
-         a:hover img.scr {
-             opacity: 1;
-         }
-         h2 {
-             cursor: default;
-             font-size: 1.25rem;
-             font-weight: 100;
-             letter-spacing: -0.025rem;
-             margin: 0;
-         }
-         h3 {
-             margin: 0;
-         }
-         ul {
-             padding-left: 0;
-             list-style: none;
-         }
-         .item-label {
-             background: #252121;
-             display: inline-block;
-             font-size: 16px;
-             height: 100px;
-             width: 50%;
-             text-align: left;
-             vertical-align: top;
-         }
-         .scr {
-             -webkit-backface-visibility: hidden;
-             display: inline-block;
-             opacity: 0.8;
-             transition: opacity 0.25s;
-             height: 100px;
-         }
-         pre { color: cyan; }
-         span.accent { color: #BAD7EC; }
-         span.dark { color: #777777; }
-         span.slump {
-             position: relative;
-             top: 0.375rem;
-         }
-         span.tiny {
-             font-size: 14px;
-         }
-         span.label {
-             display: inline-block;
-             margin-top: 1rem;
-             height: 128px;
-         }
-         p.tighten {
-             line-height: 0.975rem;
-             margin: 0;
-         }
-         .block { display: block; }
-         .inline-block { display: inline-block; }
-         .float-right { float: right; margin-top: 0.195rem}
-         .hide { display: none; }
-         .noselect {
-             -webkit-touch-callout: none;
-             -webkit-user-select: none;
-             -khtml-user-select: none;
-             -moz-user-select: none;
-             -ms-user-select: none;
-             user-select: none;
-         }
-         header {
-             background: #F9F9F9;
-             background-image: url('img/bg.png');
-             margin: 0 0 2.25rem 0;
-             padding: 0.5rem 0 1rem 1rem;
-             text-align: left;
-             width: 100%;
-             top: 0;
-             left: 0;
-             z-index: 100;
-         }
-         .subtitle {
-             font-size: 18px;
-         }
-         @media (max-width: 600px) {
-             header {
-                 margin-bottom: 0;
-                 position: fixed;
-             }
-             footer {
-                 margin-top: 1.25rem;
-             }
-             .top {
-                 margin-top: 4.5rem;
-             }
-         }
+        <link rel="canonical" href="index.html" />
+        <script async src="https://cdn.ampproject.org/v0.js"></script>
+        <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+        <style amp-custom>
+            ::selection {
+                background: #BBCCBB; /* WebKit/Blink Browsers */
+                color: #191111;
+            }
+            ::-moz-selection {
+                background: #6748B4; /* Gecko Browsers */
+                color: #191111;
+            }
+            html {
+                background: #F9F9F9;
+                font-family: "Crimson Text", serif;
+                text-align: center;
+            }
+            main {
+                display: inline-block;
+                max-width: 35rem;
+                width: 100%;
+            }
+            a {
+                color: black;
+            }
+            a:hover {
+                background-color: black;
+                color: white;
+                text-decoration: none;
+            }
+            ul {
+                list-style: none;
+                padding-left: 0;
+            }
+            aside#quote {
+                margin-left: 10%;
+                width: 80%;
+            }
+            .hide {
+                display: none;
+            }
         </style>
+        <title>matyi.net</title>
     </head>
     <body>
-        <header class="noselect">
-            <span class="tiny">
-                <a class="low" href="index.html">matyi.n<span class="slump">e</span>t</a>
-            </span>
-        </header>
-        <pre class="hide">
-
-            <b>Note</b>: You will need JavaScript to view any of
-      the links on this page. This is a portfolio of my
-              work in JavaScript after all. :)</pre>
-
-        <h2 class="top">
-            professional
-        </h2>
-        <ul>
-            <li>
-                <a class="no-underline" href="https://www.househappy.com">
-                    <img alt="Househappy" class="scr" src="img/househappy.jpg">
-                </a>
-                <div class="item-label">
-                    <a href="https://www.househappy.com">Househappy</a>
-                </div>
-            </li>
-            <li>
-                <a class="no-underline" href="http://www.acehotel.com/">
-                    <img alt="Ace Hotel" class="scr" src="img/ace-hotel.jpg">
-                </a>
-                <div class="item-label">
-                    <a href="http://www.acehotel.com/">Ace Hotel</a>
-                </div>
-            </li>
-            <li>
-                <a class="no-underline" href="http://www.yaynomoremold.com/">
-                    <img alt="Y.A.Y. No More Mold" class="scr" src="img/yay-no-more-mold.jpg">
-                </a>
-                <div class="item-label">
-                    <a href="http://www.yaynomoremold.com/">Y.A.Y. No More Mold</a>
-                </div>
-            </li>
-        </ul>
-
-        <h2>
-            other
-        </h2>
-        <ul>
-            <li>
-                <a class="no-underline" href="http://diskett.es/~matyi/world-peace">
-                    <img alt="world-peace" class="scr" src="http://diskett.es/~matyi/world-peace/screenshot.jpg">
-                </a>
-                <div class="item-label">
-                    <a href="http://diskett.es/~matyi/world-peace">world-peace</a>
-                </div>
-            </li>
-            <li>
-                <a class="no-underline" href="http://diskett.es/~matyi/7/cart/server/public/">
-                    <img alt="cart" class="scr" src="http://diskett.es/~matyi/7/cart/screenshot.jpg">
-                </a>
-                <div class="item-label">
-                    <a href="http://diskett.es/~matyi/7/cart/server/public/">shop</a>
-                </div>
-            </li>
-            <li>
-                <a class="no-underline" href="http://diskett.es/~matyi/7/todo/">
-                    <img alt="todo" class="scr" src="http://diskett.es/~matyi/7/todo/screenshot.jpg">
-                </a>
-                <div class="item-label">
-                    <a href="http://diskett.es/~matyi/7/todo/">todo</a>
-                </div>
-            </li>
-            <li>
-                <a class="no-underline" href="http://diskett.es/~matyi/7/clock/">
-                    <img alt="clock" class="scr" src="http://diskett.es/~matyi/7/clock/screenshot.jpg">
-                </a>
-                <div class="item-label">
-                    <a href="http://diskett.es/~matyi/7/clock/">clock</a>
-                </div>
-            </li>
-            <li>
-                <a class="no-underline" href="http://diskett.es/~matyi/7/pixel/">
-                    <img alt="pixel" class="scr" src="http://diskett.es/~matyi/7/pixel/screenshot.jpg">
-                </a>
-                <div class="item-label">
-                    <a href="http://diskett.es/~matyi/7/pixel/">pixel</a>
-                </div>
-            </li>
-            <li>
-                <a class="no-underline" href="http://diskett.es/~matyi/7/stardust/">
-                    <img alt="stardust" class="scr" src="http://diskett.es/~matyi/7/stardust/screenshot.jpg">
-                </a>
-                <div class="item-label">
-                    <a href="http://diskett.es/~matyi/7/stardust/">stardust</a>
-                </div>
-            </li>
-            <li>
-                <a class="no-underline" href="http://diskett.es/~matyi/7/waves/">
-                    <img alt="waves" class="scr" src="http://diskett.es/~matyi/7/waves/screenshot.jpg">
-                </a>
-                <div class="item-label">
-                    <a href="http://diskett.es/~matyi/7/waves/">waves</a>
-                </div>
-            </li>
-            <li>
-                <a class="no-underline" href="http://diskett.es/~matyi/7/wtf/">
-                    <img alt="wtf" class="scr" src="http://diskett.es/~matyi/7/wtf/screenshot.jpg">
-                </a>
-                <div class="item-label">
-                    <a href="http://diskett.es/~matyi/7/wtf/">wtf</a>
-                </div>
-            </li>
-        </ul>
-
-        <pre class="hide">
-        ~
-
-        </pre>
-
+        <main>
+            <h1>matyi.net</h1>
+            <pre class="hide">
+<b>Note</b>: You may need JavaScript to
+      view the links on this page.</pre>
+            <h2 class="top">professional</h2>
+            <ul>
+                <li><a href="https://www.househappy.com">Househappy</a></li>
+                <li><a href="http://www.acehotel.com/">Ace Hotel</a></li>
+                <li><a href="http://www.yaynomoremold.com/">Y.A.Y. No More Mold</a></li>
+            </ul>
+            <h2>misc</h2>
+            <ul>
+                <li><a href="http://diskett.es/~matyi/7/cart/server/public/">cart</a></li>
+                <li><a href="http://diskett.es/~matyi/7/clock/">clock</a></li>
+                <li><a href="http://diskett.es/~matyi/7/pixel/">pixel</a></li>
+                <li><a href="http://diskett.es/~matyi/7/stardust/">stardust</a></li>
+                <li><a href="http://diskett.es/~matyi/7/todo/">todo</a></li>
+                <li><a href="http://diskett.es/~matyi/7/waves/">waves</a></li>
+                <li><a href="http://diskett.es/~matyi/world-peace">world-peace</a></li>
+                <li><a class="no-underline" href="http://diskett.es/~matyi/7/wtf/">wtf</a></li>
+            </ul>
+        </main>
         <footer>
             <a href="index.html">
                 <span class="tiny">go back</span>

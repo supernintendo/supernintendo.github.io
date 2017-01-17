@@ -1,1 +1,3 @@
-[![matyi.net](http://matyi.net/img/screenshot.gif)](http://matyi.net)
+# matyi.net
+
+This is the source code for [my personal homepage](https://matyi.net).
