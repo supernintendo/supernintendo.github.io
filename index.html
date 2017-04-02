@@ -5,7 +5,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
         <meta name="Description" content="Official website of Michael Matyi, software developer and multimedia artist. matyi.net, matyi, Michael Matyi">
-        <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Astloch" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=UnifrakturCook:700" rel="stylesheet">
         <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
         <link href="favicon.ico" rel="icon" type="image/x-icon">
         <link rel="canonical" href="index.html" />
@@ -21,48 +22,182 @@
                 color: #191111;
             }
             html {
-                background: #F9F9F9;
-                font-family: "Crimson Text", serif;
+                background: url('img/spiral.gif');
                 text-align: center;
             }
             main {
+                background: #202020;
+                color: #BBC4BB;
                 display: inline-block;
-                max-width: 35rem;
+                left: 1vw;
+                margin: 1vh;
+                min-height: 98vh;
+                max-width: 98vw;
                 width: 100%;
             }
-            a {
-                color: black;
+            @media only screen and (min-width: 640px) {
+                main {
+                    border-radius: 100%;
+                }
+                ul#links li {
+                    text-align: left;
+                }
+                ul#links li:nth-child(odd) {
+                    margin-left: 2rem;
+                }
+                ul#social-media-links {
+                    margin-left: 1rem;
+                }
             }
-            a:hover {
-                background-color: black;
-                color: white;
+            @media only screen and (max-width: 640px) {
+                main {
+                    border-radius: 0%;
+                }
+                ul#links {
+                    margin-top: 1.5rem;
+                    width: 100%;
+                }
+                ul#links li {
+                    display: inline-block;
+                    text-align: center;
+                }
+                ul#links li span:first-child {
+                    position: relative;
+                    top: .75rem;
+                }
+                ul#links li:nth-child(odd) {
+                    margin-left: 0;
+                }
+                ul#social-media-links {
+                    margin-top: 0rem;
+                }
+                ul#social-media-links {
+                    margin-left: 0;
+                }
+                html .hide-on-mobile {
+                    display: none;
+                }
+            }
+            main ul {
+                margin-top: 25vh;
+            }
+            a {
+                color: #BBC4BB;
                 text-decoration: none;
             }
+            a:hover {
+                border-bottom: 2px dotted #BBC4BB;
+                color: #CBD4CB;
+                cursor: pointer;
+                text-shadow: 1px 1px #BBC4BB;
+            }
             ul {
+                display: inline-block;
+                font-size: 2.5rem;
                 list-style: none;
                 padding-left: 0;
             }
+            ul#links li {
+                font-family: "UnifrakturCook", serif;
+                letter-spacing: 0.25rem;
+                margin-top: 0px;
+            }
+            ul#links li span:first-child {
+                display: inline-block;
+                font-family: 'Astloch', cursive;
+                text-align: right;
+                margin-right: 0.25rem;
+            }
+            ul#links li:first-child a:hover {
+                color: #FF0A5A;
+            }
+            ul#links li:nth-child(2) a:hover {
+                color: #3000C6;
+            }
+            ul#links li:nth-child(3) a:hover {
+                color: #9D00FF;
+            }
+            ul#links li:nth-child(5) a:hover {
+                color: #F1C21D;
+            }
+            ul#links li:first-child span:first-child  {
+                color: #FF0A5A;
+                text-shadow: 2px 2px #2A2A36;
+            }
+            ul#links li:nth-child(2) span:first-child {
+                color: #3000C6;
+                text-shadow: 2px 2px #2F2837;
+            }
+            ul#links li:nth-child(3) span:first-child {
+                color: #9D00FF;
+                text-shadow: 2px 2px #48435D;
+            }
+            ul#links li:nth-child(4) span:first-child {
+                color: #210346;
+                text-shadow: 2px 2px #434B5D;
+            }
+            ul#links li:nth-child(5) span:first-child {
+                color: #F1C21D;
+                text-shadow: 2px 2px #3C4953;
+            }
+            ul#social-media-links li {
+                display: inline-block;
+            }
+            ul#social-media-links li.delimiter:after {
+                color: #85D2DF;
+                content: " . "
+            }
+            ul#social-media-links li#head {
+                display: block;
+                margin-bottom: 0.25rem;
+            }
+            ul#social-media-links {
+                font-size: 14px;
+            }
+            span#i {
+                display: inline-block;
+                left: 0.275rem;
+                position: relative;
+            }
             aside#quote {
-                margin-left: 10%;
-                width: 80%;
+                color: #666666;
+                margin: 0 25% 1.5rem 25%;
+                width: 50%;
             }
             .hide {
                 display: none;
             }
         </style>
-        <title>matyi.net</title>
+        <title>
+            matyi.net
+        </title>
     </head>
     <body>
         <main>
-            <h1>matyi.net</h1>
-            <amp-img src="img/spiral.gif" width="128" height="128"></amp-img>
+            <!--<h1>matyi.net</h1>-->
             <ul id="links" class="plain-list">
-                <li><a href="portfolio.html">portfolio</a></li>
-                <li><a href="https://github.com/supernintendo">github</a></li>
-                <li><a href="https://soundcloud.com/michaelmatyi">soundcloud</a></li>
-                <li><a href="https://twitter.com/michaelmatyi">twitter</a></li>
-                <li><a href="misc/matyi.wav"><span>how to pronounce my name</span><span class="hide"> (WAV file)</span></a></li>
-                <li>michael (at) matyi.net</li>
+                <li>
+                    <span>m</span>
+                </li>
+                <li>
+                    <a href="software/">softw<span>a</span>re</a>
+                </li>
+                <li>
+                    <a href="https://soundcloud.com/michaelmatyi" target="_blank"><span>t</span><span>unes</span></a>
+                </li>
+                <li>
+                    <span>y</span>
+                </li>
+                <li>
+                    <a href="info/"><span id="i"><span>i</span></span><span>nfo?</span></a>
+                </li>
+            </ul>
+            <ul id="social-media-links">
+                <li id="head"><amp-img src="img/final.jpg" width="202px" height="202px"></amp-img></li>
+                <li><em>M. L. L. M.</em></li><br>
+                <li class="delimiter"><a href="mailto:michael@matyi.net">email</a></li>
+                <li class="delimiter"><a href="https://github.com/supernintendo" target="_blank">github</a></li>
+                <li><a href="https://twitter.com/michaelmatyi" target="_blank">twitter</a></li>
             </ul>
             <aside id="quote">
                 <i>
