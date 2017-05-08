@@ -13,28 +13,29 @@
         <style amp-custom>
             @media only screen and (max-width: 640px) {
                 html main {
+                    box-shadow: none;
                     margin: 1rem 0;
                     width: 95%;
                 }
             }
             ::selection {
-                background: cyan; /* WebKit/Blink Browsers */
-                color: #302121;
+                background: #191111; /* WebKit/Blink Browsers */
+                color: #191111;
             }
             ::-moz-selection {
-                background: cyan; /* WebKit/Blink Browsers */
-                color: #302121;
+                background: #191111; /* WebKit/Blink Browsers */
+                color: #191111;
             }
             html {
-                background-color: #CCE5E7;
-                background: url('../img/water.gif');
+                background: #C779D0;
+                background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+                background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
                 text-align: center;
             }
             main {
-                background: #C779D0; 
-                background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
-                background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
-                color: #191111;
+                background: #191111;
+                box-shadow: 24px 24px #392424;
+                color: #C2C2C2;
                 display: inline-block;
                 letter-spacing: -0.0325rem;
                 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -47,13 +48,16 @@
                 width: 70%;
             }
             a {
-                color: #191111;
-                text-shadow: 1px 1px #421A2C;
+                -webkit-transition: text-shadow 0.1s ease-in-out;
+                -moz-transition: text-shadow 0.1s ease-in-out;
+                -o-transition: text-shadow 0.1s ease-in-out;
+                transition: text-shadow 0.1s ease-in-out;
+                color: #85D3E0;
                 text-decoration: none;
             }
             a:hover {
-                color: #C87ACE;
-                text-shadow: 2px 2px magenta;
+                color: #191111;
+                text-shadow: 3px 3px #85D3E0;
             }
             aside#quote {
                 margin-left: 10%;
@@ -62,21 +66,57 @@
             footer {
                 margin-bottom: 2.5rem;
             }
-            strong:nth-child(1) {
-                color: #FCAA62;
+            strong {
+                -webkit-animation: crawl-shadow 1s 1 cubic-bezier(0.42,0,1,1);;
+                -moz-animation:    crawl-shadow 1s 1 cubic-bezier(0.42,0,1,1);;
+                -o-animation:      crawl-shadow 1s 1 cubic-bezier(0.42,0,1,1);;
+                animation:         crawl-shadow 1s 1 cubic-bezier(0.42,0,1,1);;
+                color: #191111;
+                text-shadow: 4px 4px #E22070;
             }
             strong:nth-child(2) {
-                color: #47D1D5;
+                -webkit-filter: hue-rotate(275deg);
+                filter: hue-rotate(275deg);
             }
             ul {
                 list-style: none;
                 padding-left: 0;
+            }
+            #palmtree {
+                pointer-events: none;
+                position: fixed;
+                bottom: 16px;
+                right: 16px;
             }
             #portrait {
                 margin: 3rem 0 0.5rem 0;
             }
             .hide {
                 display: none;
+            }
+            /* Chrome, Safari, Opera */
+            @-webkit-keyframes crawl-shadow {
+                0% {
+                    text-shadow: 0px 0px #E22070;
+                }
+                50% {
+                    text-shadow: 0px 0px #E22070;
+                }
+                100% {
+                    text-shadow: 4px 4px #E22070;
+                }
+            }
+            /* Standard syntax */
+            @keyframes crawl-shadow {
+                0% {
+                    text-shadow: 0px 0px #E22070;
+                }
+                50% {
+                    text-shadow: 0px 0px #E22070;
+                }
+                100% {
+                    text-shadow: 4px 4px #E22070;
+                }
             }
         </style>
         <title>
@@ -94,6 +134,7 @@
                 <a href="mailto:michael@matyi.net">Click here to contact me.</a>
             </p>
             <footer>
+                <img id="palmtree" src="../img/palmtree.gif" />
                 <a href="../">
                     <span class="tiny">go back</span>
                 </a>

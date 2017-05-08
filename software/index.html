@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
         <meta name="Description" content="Official website of Michael Matyi, software developer and multimedia artist. matyi.net, matyi, Michael Matyi">
-        <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
         <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
         <link href="favicon.ico" rel="icon" type="image/x-icon">
         <link rel="canonical" href="index.html" />
@@ -22,39 +22,46 @@
             }
             html {
                 background: url('../img/space.gif');
-                text-align: center;
+                text-align: left;
             }
             main {
                 background: black;
                 color: #C2C2C2;
                 display: inline-block;
-                font-family: "VT323", Courier New, Courier, monospace;
+                font-family: "Inconsolata", Courier New, Courier, monospace;
                 font-size: 21px;
-                margin: 1rem;
-                padding-bottom: 1.5rem;
-                width: 90%;
+                margin: 3rem 10% 1rem 10%;
+                padding: 1.5rem;
+                width: 80%;
             }
             a {
-                -webkit-animation: rainbow 25s infinite;
-                -moz-animation:    rainbow 25s infinite;
-                -o-animation:      rainbow 25s infinite;
-                animation:         rainbow 25s infinite;
-                -webkit-transition: all 3s ease-in-out;
-                -moz-transition: all 3s ease-in-out;
-                -o-transition: all 3s ease-in-out;
-                transition: all 3s ease-in-out;
+                -webkit-animation: rainbow 15s infinite;
+                -moz-animation:    rainbow 15s infinite;
+                -o-animation:      rainbow 15s infinite;
+                animation:         rainbow 15s infinite;
+                -webkit-transition: all 3s ease-out;
+                -moz-transition: all 3s ease-out;
+                -o-transition: all 3s ease-out;
+                transition: all 3s ease-out;
                 border: 2px 2px #191111;
                 color: #C2C2C2;
                 text-decoration: none;
             }
             a:hover {
-                -webkit-transition: all 0.25s ease-in-out;
-                -moz-transition: all 0.25s ease-in-out;
-                -o-transition: all 0.25s ease-in-out;
-                transition: all 0.25s ease-in-out;
+                -webkit-transition: all 0.1s ease-in;
+                -moz-transition: all 0.1s ease-in;
+                -o-transition: all 0.1s ease-in;
+                transition: all 0.1s ease-in;
                 background-color: black;
-                color: greenyellow;
+                color: aquamarine;
                 text-shadow: 2px 2px 1px blue;
+            }
+            a::before {
+                content: "▒ ";
+                visibility: hidden;
+            }
+            a:hover::before {
+                visibility: visible;
             }
             span#i {
                 display: inline-block;
@@ -71,6 +78,9 @@
             ul {
                 list-style: none;
                 padding-left: 0;
+            }
+            h2 {
+                margin: -0.25rem 0;
             }
             .hide {
                 display: none;
@@ -90,7 +100,6 @@
                     filter: hue-rotate(0deg);
                 }
             }
-
             /* Standard syntax */
             @keyframes rainbow {
                 0% {
@@ -117,12 +126,7 @@
             <pre class="hide">
 <b>Note</b>: You may need JavaScript to
       view the links on this page.</pre>
-            <h2 class="top">professional</h2>
-            <ul id="professional">
-                <li><a href="https://www.househappy.com">Househappy</a></li>
-                <li><a href="http://www.acehotel.com/">Ace Hotel</a></li>
-            </ul>
-            <h2 class="top">frontend experiments</h2>
+            <h2 class="top">frontend</h2>
             <ul id="frontend">
                 <li><a href="http://diskett.es/~matyi/7/cart/server/public/">cart</a></li>
                 <li><a href="http://diskett.es/~matyi/7/clock/">clock</a></li>
@@ -132,11 +136,16 @@
                 <li><a href="http://diskett.es/~matyi/world-peace">world peace</a></li>
                 <li><a class="no-underline" href="http://diskett.es/~matyi/7/wtf/">wtf</a></li>
             </ul>
-            <h2 class="top">libraries</h2>
+            <h2 class="top">libs</h2>
             <ul id="libraries">
                 <li><a href="https://github.com/supernintendo/eon" target="_blank">eon</a></li>
                 <li><a href="https://github.com/supernintendo/exmorph" target="_blank">exmorph</a></li>
                 <li><a href="https://github.com/supernintendo/wand" target="_blank">wand</a></li>
+            </ul>
+            <h2 class="top">professional</h2>
+            <ul id="work">
+                <li><a href="https://www.househappy.com">Househappy</a></li>
+                <li><a href="http://www.acehotel.com/">Ace Hotel</a></li>
             </ul>
             <footer>
                 <a href="../">

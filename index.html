@@ -14,20 +14,24 @@
         <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
         <style amp-custom>
             ::selection {
-                background: #BBC4BB; /* WebKit/Blink Browsers */
+                background: #DFDFDF; /* WebKit/Blink Browsers */
                 color: #191111;
             }
             ::-moz-selection {
                 background: #6748B4; /* Gecko Browsers */
                 color: #191111;
             }
-            html {
-                background: url('img/spiral.gif');
+            html, body {
+                background: #DFDFDF;
                 text-align: center;
             }
+            #main-container {
+                background: url('img/spiral.gif');
+                opacity: 1;
+            }
             main {
-                background: #202020;
-                color: #BBC4BB;
+                background: #DFDFDF;
+                color: #191111;
                 display: inline-block;
                 margin: 1vh 1vw;
                 min-height: 98vh;
@@ -80,14 +84,14 @@
                 margin-top: 25vh;
             }
             a {
-                color: #BBC4BB;
+                color: #191111;
                 text-decoration: none;
             }
             a:hover {
                 border-bottom: 2px dotted #BBC4BB;
                 color: #CBD4CB;
                 cursor: pointer;
-                text-shadow: 1px 1px #BBC4BB;
+                text-shadow: 1px 1px #191111;
             }
             ul {
                 display: inline-block;
@@ -106,38 +110,6 @@
                 text-align: right;
                 margin-right: 0.25rem;
             }
-            ul#links li:first-child a:hover {
-                color: #FF0A5A;
-            }
-            ul#links li:nth-child(2) a:hover {
-                color: #3000C6;
-            }
-            ul#links li:nth-child(3) a:hover {
-                color: #9D00FF;
-            }
-            ul#links li:nth-child(5) a:hover {
-                color: #F1C21D;
-            }
-            ul#links li:first-child span:first-child  {
-                color: #FF0A5A;
-                text-shadow: 2px 2px #2A2A36;
-            }
-            ul#links li:nth-child(2) span:first-child {
-                color: #3000C6;
-                text-shadow: 2px 2px #2F2837;
-            }
-            ul#links li:nth-child(3) span:first-child {
-                color: #9D00FF;
-                text-shadow: 2px 2px #48435D;
-            }
-            ul#links li:nth-child(4) span:first-child {
-                color: #210346;
-                text-shadow: 2px 2px #434B5D;
-            }
-            ul#links li:nth-child(5) span:first-child {
-                color: #F1C21D;
-                text-shadow: 2px 2px #3C4953;
-            }
             ul#social-media-links li {
                 display: inline-block;
             }
@@ -146,6 +118,10 @@
                 content: " . "
             }
             ul#social-media-links li#head {
+                -webkit-animation: fade-saturation 12s 1;
+                -moz-animation:    fade-saturation 12s 1;
+                -o-animation:      fade-saturation 12s 1;
+                animation:         fade-saturation 12s 1;
                 display: block;
                 margin-bottom: 0.25rem;
             }
@@ -165,84 +141,108 @@
             .hide {
                 display: none;
             }
+            /* Chrome, Safari, Opera */
+            @-webkit-keyframes fade-saturation {
+                0% {
+                    -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);
+                }
+                100% {
+                    -webkit-filter: grayscale(0%);
+                    filter: grayscale(0%);
+                }
+            }
+            /* Standard syntax */
+            @keyframes fade-saturation {
+                0% {
+                     -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);
+                }
+                100% {
+                    -webkit-filter: grayscale(0%);
+                    filter: grayscale(0%);
+                }
+            }
         </style>
         <title>
             matyi.net
         </title>
     </head>
     <body>
-        <main>
-            <!--<h1>matyi.net</h1>-->
-            <ul id="links" class="plain-list">
-                <li>
-                    <span>m</span>
-                </li>
-                <li>
-                    <a href="software/">softw<span>a</span>re</a>
-                </li>
-                <li>
-                    <a href="https://soundcloud.com/michaelmatyi" target="_blank"><span>t</span><span>unes</span></a>
-                </li>
-                <li>
-                    <span>y</span>
-                </li>
-                <li>
-                    <a href="info/"><span id="i"><span>i</span></span><span>nfo?</span></a>
-                </li>
-            </ul>
-            <ul id="social-media-links">
-                <li id="head"><amp-img src="img/final.jpg" width="202px" height="202px"></amp-img></li>
-                <li><em>M. L. L. M.</em></li><br>
-                <li class="delimiter"><a href="mailto:michael@matyi.net">email</a></li>
-                <li class="delimiter"><a href="https://github.com/supernintendo" target="_blank">github</a></li>
-                <li><a href="https://twitter.com/michaelmatyi" target="_blank">twitter</a></li>
-            </ul>
-            <pre class="hide">
-                <em>
+        <div id="main-container">
+            <main>
+                <!--<h1>matyi.net</h1>-->
+                <ul id="links" class="plain-list">
+                    <li>
+                        <span>m</span>
+                    </li>
+                    <li>
+                        <a href="software/">softw<span>a</span>re</a>
+                    </li>
+                    <li>
+                        <a href="https://soundcloud.com/michaelmatyi" target="_blank"><span>t</span><span>unes</span></a>
+                    </li>
+                    <li>
+                        <span>y</span>
+                    </li>
+                    <li>
+                        <a href="info/"><span id="i"><span>i</span></span><span>nfo?</span></a>
+                    </li>
+                </ul>
+                <ul id="social-media-links">
+                    <li id="head"><amp-img src="img/head.jpg" width="202px" height="202px"></amp-img></li>
+                    <li><em>M. L. L. M.</em></li><br>
+                    <li class="delimiter"><a href="mailto:michael@matyi.net">email</a></li>
+                    <li class="delimiter"><a href="https://github.com/supernintendo" target="_blank">github</a></li>
+                    <li><a href="https://twitter.com/michaelmatyi" target="_blank">twitter</a></li>
+                </ul>
+                <pre class="hide">
+                    <em>
 
-                                ,_-=(!7(7/zs_.
-                             .='  ' .`/,/!(=)Zm.
-               .._,,._..  ,-`- `,\ ` -` -`\\7//WW.
-          ,v=~/.-,-\- -!|V-s.)iT-|s|\-.'   `///mK%.
-        v!`i!-.e]-g`bT/i(/[=.Z/m)K(YNYi..   /-]i44M.
-      v`/,`|v]-DvLcfZ/eV/iDLN\D/ZK@%8W[Z..   `/d!Z8m
-     //,c\(2(X/NYNY8]ZZ/bZd\()/\7WY%WKKW)   -'|(][%4.
-   ,\\i\c(e)WX@WKKZKDKWMZ8(b5/ZK8]Z7%ffVM,   -.Y!bNMi
-   /-iit5N)KWG%%8%%%%W8%ZWM(8YZvD)XN(@.  [   \]!/GXW[
-  / ))G8\NMN%W%%%%%%%%%%8KK@WZKYK*ZG5KMi,-   vi[NZGM[
- i\!(44Y8K%8%%%**~YZYZ@%%%%%4KWZ/PKN)ZDZ7   c=//WZK%!
-,\v\YtMZW8W%%f`,`.t/bNZZK%%W%%ZXb*K(K5DZ   -c\\/KM48
--|c5PbM4DDW%f  v./c\[tMY8W%PMW%D@KW)Gbf   -/(=ZZKM8[
-2(N8YXWK85@K   -'c|K4/KKK%@  V%@@WD8e~  .//ct)8ZK%8`
-=)b%]Nd)@KM[  !'\cG!iWYK%%|   !M@KZf    -c\))ZDKW%`
-YYKWZGNM4/Pb  '-VscP4]b@W%     'Mf`   -L\///KM(%W!
-!KKW4ZK/W7)Z. '/cttbY)DKW%     -`  .',\v)K(5KW%%f
-'W)KWKZZg)Z2/,!/L(-DYYb54%  ,,`, -\-/v(((KK5WW%f
- \M4NDDKZZ(e!/\7vNTtZd)8\Mi!\-,-/i-v((tKNGN%W%%
- 'M8M88(Zd))///((|D\tDY\\KK-`/-i(=)KtNNN@W%%%@%[
-  !8%@KW5KKN4///s(\Pd!ROBY8/=2(/4ZdzKD%K%%%M8@%%
-   '%%%W%dGNtPK(c\/2\[Z(ttNYZ2NZW8W8K%%%%YKM%M%%.
-     *%%W%GW5@/%!e]_tZdY()v)ZXMZW%W%%%*5Y]K%ZK%8[
-      '*%%%%8%8WK\)[/ZmZ/Zi]!/M%%%%@f\ \Y/NNMK%%!
-        'VM%%%%W%WN5Z/Gt5/b)((cV@f`  - |cZbMKW%%|
-           'V*M%%%WZ/ZG\t5((+)L\'-,,/  -)X(NWW%%
-                `~`MZ/DZGNZG5(((\,    ,t\\Z)KW%@
-                   'M8K%8GN8\5(5///]i!v\K)85W%%f
-                     YWWKKKKWZ8G54X/GGMeK@WM8%@
-                      !M8%8%48WG@KWYbW%WWW%%%@
-                        VM%WKWK%8K%%8WWWW%%%@`
-                          ~*%%%%%%W%%%%%%%@~
-                             ~*MM%%%%%%@f`
-                                  '''''
-                </em>
-            </pre>
-            <aside id="quote">
-                <i>
-                    "It is not necessary for the public to know whether I am joking
-                    or whether I am serious, just as it is not necessary for me to
-                    know it myself."
-                </i> - Salvador Dali
-            </aside>
-        </main>
+                                    ,_-=(!7(7/zs_.
+                                .='  ' .`/,/!(=)Zm.
+                .._,,._..  ,-`- `,\ ` -` -`\\7//WW.
+            ,v=~/.-,-\- -!|V-s.)iT-|s|\-.'   `///mK%.
+            v!`i!-.e]-g`bT/i(/[=.Z/m)K(YNYi..   /-]i44M.
+        v`/,`|v]-DvLcfZ/eV/iDLN\D/ZK@%8W[Z..   `/d!Z8m
+        //,c\(2(X/NYNY8]ZZ/bZd\()/\7WY%WKKW)   -'|(][%4.
+    ,\\i\c(e)WX@WKKZKDKWMZ8(b5/ZK8]Z7%ffVM,   -.Y!bNMi
+    /-iit5N)KWG%%8%%%%W8%ZWM(8YZvD)XN(@.  [   \]!/GXW[
+    / ))G8\NMN%W%%%%%%%%%%8KK@WZKYK*ZG5KMi,-   vi[NZGM[
+    i\!(44Y8K%8%%%**~YZYZ@%%%%%4KWZ/PKN)ZDZ7   c=//WZK%!
+    ,\v\YtMZW8W%%f`,`.t/bNZZK%%W%%ZXb*K(K5DZ   -c\\/KM48
+    -|c5PbM4DDW%f  v./c\[tMY8W%PMW%D@KW)Gbf   -/(=ZZKM8[
+    2(N8YXWK85@K   -'c|K4/KKK%@  V%@@WD8e~  .//ct)8ZK%8`
+    =)b%]Nd)@KM[  !'\cG!iWYK%%|   !M@KZf    -c\))ZDKW%`
+    YYKWZGNM4/Pb  '-VscP4]b@W%     'Mf`   -L\///KM(%W!
+    !KKW4ZK/W7)Z. '/cttbY)DKW%     -`  .',\v)K(5KW%%f
+    'W)KWKZZg)Z2/,!/L(-DYYb54%  ,,`, -\-/v(((KK5WW%f
+    \M4NDDKZZ(e!/\7vNTtZd)8\Mi!\-,-/i-v((tKNGN%W%%
+    'M8M88(Zd))///((|D\tDY\\KK-`/-i(=)KtNNN@W%%%@%[
+    !8%@KW5KKN4///s(\Pd!ROBY8/=2(/4ZdzKD%K%%%M8@%%
+    '%%%W%dGNtPK(c\/2\[Z(ttNYZ2NZW8W8K%%%%YKM%M%%.
+        *%%W%GW5@/%!e]_tZdY()v)ZXMZW%W%%%*5Y]K%ZK%8[
+        '*%%%%8%8WK\)[/ZmZ/Zi]!/M%%%%@f\ \Y/NNMK%%!
+            'VM%%%%W%WN5Z/Gt5/b)((cV@f`  - |cZbMKW%%|
+            'V*M%%%WZ/ZG\t5((+)L\'-,,/  -)X(NWW%%
+                    `~`MZ/DZGNZG5(((\,    ,t\\Z)KW%@
+                    'M8K%8GN8\5(5///]i!v\K)85W%%f
+                        YWWKKKKWZ8G54X/GGMeK@WM8%@
+                        !M8%8%48WG@KWYbW%WWW%%%@
+                            VM%WKWK%8K%%8WWWW%%%@`
+                            ~*%%%%%%W%%%%%%%@~
+                                ~*MM%%%%%%@f`
+                                    '''''
+                    </em>
+                </pre>
+                <aside id="quote">
+                    <i>
+                        "It is not necessary for the public to know whether I am joking
+                        or whether I am serious, just as it is not necessary for me to
+                        know it myself."
+                    </i> - Salvador Dali
+                </aside>
+            </main>
+        </div>
     </body>
 </html>
