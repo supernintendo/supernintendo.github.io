@@ -1,191 +1,271 @@
 <!-- matyi.net -->
 <!DOCTYPE html>
 <html ⚡>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-        <meta name="Description" content="Official website of Michael Matyi, software developer and multimedia artist. matyi.net, matyi, Michael Matyi">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/manifest.json">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="theme-color" content="#ffffff">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <link rel="canonical" href="index.html" />
-        <script async src="https://cdn.ampproject.org/v0.js"></script>
-        <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-        <style amp-custom>
-            ::selection {
-                background: #DDDDDB; /* WebKit/Blink Browsers */
-                color: #302121;
-            }
-            ::-moz-selection {
-                background: #6748B4; /* Gecko Browsers */
-                color: #191111;
-            }
-            @font-face {
-                font-family: pixelpoiiz;
-                src: url(../fonts/pixelpoiiz.ttf);
-            }
-            html {
-                background: #220002;
-                background-image: url(../img/bg3.png);
-                text-align: center;
-            }
-            main {
-                color: #DDDDD8;
-                display: inline-block;
-                font-family: pixelpoiiz, Monaco, Consolas, monospace;
-                font-size: 1.25rem;
-                padding: 2.75rem 1.25rem;
-                text-align: left;
-                width: 80%;
-            }
-            a {
-                -webkit-transition: all 3s ease-out;
-                -moz-transition: all 3s ease-out;
-                -o-transition: all 3s ease-out;
-                transition: all 3s ease-out;
-                color: #DDDDDB;
-                text-decoration: none;
-                margin-left: -1rem;
-            }
-            a:hover {
-                -webkit-transition: all 0s ease-in;
-                -moz-transition: all 0s ease-in;
-                -o-transition: all 0s ease-in;
-                color: #9D9AAA;
-                transition: all 0s ease-in;
-            }
-            a::before {
-                content: "▒ ";
-                visibility: hidden;
-            }
-            ul li a {
-                -webkit-animation: rainbow 12s infinite;
-                -moz-animation:    rainbow 12s infinite;
-                -o-animation:      rainbow 12s infinite;
-                animation:         rainbow 12s infinite;
-            }
-            ul li a:hover {
-                color: #FD7A37;
-                text-shadow: -1px 0 #9D6ACA, 0 1px #9D6ACA, 1px 0 #9D6ACA, 0 -1px #9D6ACA;
-            }
-            ul li a:hover::before {
-                visibility: visible;
-            }
-            span#i {
-                display: inline-block;
-                position: relative;
-            }
-            footer {
-                margin-bottom: 1rem;
-            }
-            ul {
-                list-style: none;
-                padding-left: 0;
-            }
-            h2 {
-                color: #5F4E51;
-                margin: -0.5rem 0 -1.25rem 0;
-                text-shadow: 0.25rem 0.25rem #191111;
-            }
-            h2::first-letter {
-                font-size: 4rem;
-            }
-            .hide {
-                display: none;
-            }
-            /* Chrome, Safari, Opera */
-            @-webkit-keyframes rainbow {
-                0% {
-                    -webkit-filter: hue-rotate(0deg);
-                    filter: hue-rotate(0deg);
-                }
-                50%  {
-                    -webkit-filter: hue-rotate(360deg);
-                    filter: hue-rotate(180deg);
-                }
-                100% {
-                    -webkit-filter: hue-rotate(0deg);
-                    filter: hue-rotate(0deg);
-                }
-            }
-            /* Standard syntax */
-            @keyframes rainbow {
-                0% {
-                    -webkit-filter: hue-rotate(0deg);
-                    filter: hue-rotate(0deg);
-                }
-                50%  {
-                    -webkit-filter: hue-rotate(360deg);
-                    filter: hue-rotate(180deg);
-                }
-                100% {
-                    -webkit-filter: hue-rotate(0deg);
-                    filter: hue-rotate(0deg);
-                }
-            }
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="Description" content="Official website of Michael Matyi, software developer and multimedia artist. matyi.net, matyi, Michael Matyi">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="index.html" />
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-custom>
+      ::selection {
+        background: #DDDDDB; /* WebKit/Blink Browsers */
+        color: #302121;
+      }
+      ::-moz-selection {
+        background: #6748B4; /* Gecko Browsers */
+        color: #191111;
+      }
+      @font-face {
+        font-family: pixelpoiiz;
+        src: url(../fonts/pixelpoiiz.ttf);
+      }
+      @font-face {
+        font-family: ModernDOS8x16;
+        src: url(../fonts/ModernDOS8x16.ttf);
+      }
+      html {
+        background: #220002;
+        background-image: url(../img/bg3.png);
+        text-align: center;
+      }
+      main {
+        color: #DDDDD8;
+        display: inline-block;
+        font-family: pixelpoiiz, Monaco, Consolas, monospace;
+        font-size: 1.325rem;
+        padding: 2.75rem 1.25rem;
+        text-align: left;
+        width: 80%;
+      }
+      a {
+        color: #DDDDDB;
+        text-decoration: none;
+        margin-left: -1rem;
+      }
+      a span:not(.description) {
+        -webkit-transition: all 1s ease-out;
+        -moz-transition: all 1s ease-out;
+        -o-transition: all 1s ease-out;
+        transition: all 1s ease-out;
+      }
+      a span.description {
+        color: #999999;
+        display: none;
+        font-family: ModernDOS8x16, Monaco, Consolas, monospace;
+        font-size: 1rem;
+        margin-left: 1rem;
+        text-shadow: -1px 0 #909;
+      }
+      a:hover {
+        -webkit-transition: all 0s ease-in;
+        -moz-transition: all 0s ease-in;
+        -o-transition: all 0s ease-in;
+        color: #9D9AAA;
+        transition: all 0s ease-in;
+      }
+      a:hover span.description {
+        display: initial;
+      }
+      a::before {
+        content: "▒ ";
+        visibility: hidden;
+      }
+      ul li a {
+        -webkit-animation: rainbow 12s infinite;
+        -moz-animation:    rainbow 12s infinite;
+        -o-animation:      rainbow 12s infinite;
+        animation:         rainbow 12s infinite;
+      }
+      ul li a:hover span:not(.description) {
+        color: #FD7A37;
+        text-shadow: -0.25rem 0 #9D6ACA, 0 0.25rem #9D6ACA, 0.25rem 0 #9D6ACA, 0 -0.25rem #9D6ACA;
+      }
+      ul li a:hover::before {
+        visibility: visible;
+      }
+      span#i {
+        display: inline-block;
+        position: relative;
+      }
+      footer {
+        margin-bottom: 1rem;
+      }
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      h2 {
+        color: #6F4E51;
+        margin: -0.5rem 0 -1.25rem 0;
+        text-shadow: 0.25rem 0.25rem #191111;
+      }
+      h2::first-letter {
+        font-size: 4rem;
+      }
+      .hide {
+        display: none;
+      }
+      /* Chrome, Safari, Opera */
+      @-webkit-keyframes rainbow {
+        0% {
+          -webkit-filter: hue-rotate(0deg);
+          filter: hue-rotate(0deg);
+        }
+        50%  {
+          -webkit-filter: hue-rotate(360deg);
+          filter: hue-rotate(180deg);
+        }
+        100% {
+          -webkit-filter: hue-rotate(0deg);
+          filter: hue-rotate(0deg);
+        }
+      }
+      /* Standard syntax */
+      @keyframes rainbow {
+        0% {
+          -webkit-filter: hue-rotate(0deg);
+          filter: hue-rotate(0deg);
+        }
+        50%  {
+          -webkit-filter: hue-rotate(360deg);
+          filter: hue-rotate(180deg);
+        }
+        100% {
+          -webkit-filter: hue-rotate(0deg);
+          filter: hue-rotate(0deg);
+        }
+      }
 
-            /* Chrome, Safari, Opera */
-            @-webkit-keyframes cursortoggle {
-                0% {
-                    cursor: pointer;
-                }
-                50%  {
-                    cursor: wait;
-                }
-                100% {
-                    cursor: pointer;
-                }
-            }
-            /* Standard syntax */
-            @keyframes cursortoggle {
-                0% {
-                    cursor: pointer;
-                }
-                50%  {
-                    cursor: wait;
-                }
-                100% {
-                    cursor: pointer;
-                }
-            }
-        </style>
-        <title>
-            matyi.net
-        </title>
-    </head>
-    <body>
-        <main>
-            <h1 class="hide">matyi.net</h1>
-            <pre class="hide">
+      /* Chrome, Safari, Opera */
+      @-webkit-keyframes cursortoggle {
+        0% {
+          cursor: pointer;
+        }
+        50%  {
+          cursor: wait;
+        }
+        100% {
+          cursor: pointer;
+        }
+      }
+      /* Standard syntax */
+      @keyframes cursortoggle {
+        0% {
+          cursor: pointer;
+        }
+        50%  {
+          cursor: wait;
+        }
+        100% {
+          cursor: pointer;
+        }
+      }
+    </style>
+    <title>
+      matyi.net
+    </title>
+  </head>
+  <body>
+    <main>
+      <h1 class="hide">matyi.net</h1>
+      <pre class="hide">
 <b>Note</b>: Most of the links on this page require JavaScript.</pre>
-            <h2 class="top">professional</h2>
-            <ul id="work">
-                <li><a href="https://www.househappy.com" target=_blank>Househappy</a></li>
-                <li><a href="http://www.acehotel.com/" target=_blank>Ace Hotel</a></li>
-            </ul>
-            <h2 class="top">frontend</h2>
-            <ul id="frontend">
-                <li><a href="http://diskett.es/7/cart/server/public/">cart</a></li>
-                <li><a href="http://diskett.es/7/clock/">clock</a></li>
-                <li><a href="http://diskett.es/7/pixel/">pixel art</a></li>
-                <li><a href="http://diskett.es/7/todo/">todo list</a></li>
-                <li><a href="http://diskett.es/world-peace">world peace</a></li>
-                <li><a class="no-underline" href="http://diskett.es/7/wtf/">wtf</a></li>
-            </ul>
-            <h2 class="top">libs</h2>
-            <ul id="libraries">
-                <li><a href="https://github.com/supernintendo/eon" target="_blank">eon</a></li>
-                <li><a href="https://github.com/supernintendo/exmorph" target="_blank">exmorph</a></li>
-                <li><a href="https://github.com/supernintendo/wand" target="_blank">wand</a></li>
-            </ul>
-            <footer>
-                <a href="../">&lt; go back</a>
-            </footer>
-        </main>
-    </body>
+      <h2 class="top">professional</h2>
+      <ul id="work">
+        <li>
+          <a href="https://www.househappy.com" target=_blank>
+            <span>Househappy</span>
+            <span class="description">your new best friend in homeownership</span>
+          </a>
+        </li>
+        <li>
+          <a href="http://www.acehotel.com/" target=_blank>
+            <span>Ace Hotel</span>
+            <span class="description">a friendly place, continually new</span>
+          </a>
+        </li>
+      </ul>
+      <h2 class="top">frontend</h2>
+      <ul id="frontend">
+        <li>
+          <a href="http://diskett.es/7/cart/server/public/">
+            <span>cart</span>
+            <span class="description">custom shopping cart written in typescript</span>
+          </a>
+        </li>
+        <li>
+          <a href="http://diskett.es/7/clock/">
+            <span>clock</span>
+            <span class="description">desktop clock with rotating facts about tech history</span>
+          </a>
+        </li>
+        <li>
+          <a href="http://diskett.es/7/pixel/">
+            <span>pixel art</span>
+            <span class="description">react-based pixel sketchpad</span>
+          </a>
+        </li>
+        <li>
+          <a href="http://diskett.es/7/todo/">
+            <span>todo list</span>
+            <span class="description">todo list built with angularjs</span>
+          </a>
+        </li>
+        <li>
+          <a href="http://diskett.es/world-peace">
+            <span>world peace</span>
+            <span class="description">landing page sample</span>
+          </a>
+        </li>
+        <li>
+          <a class="no-underline" href="http://diskett.es/7/wtf/">
+            <span>wtf</span>
+            <span class="description">visual experiment in d3</span>
+          </a>
+        </li>
+      </ul>
+      <h2 class="top">libs</h2>
+      <ul id="libraries">
+        <li>
+          <a href="https://github.com/supernintendo/moongate" target="_blank">
+            <span>moongate</span>
+            <span class="description">multiplayer game platform in development</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/supernintendo/eon" target="_blank">
+            <span>eon</span>
+            <span class="description">document storage library using elixir data structures</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/supernintendo/exmorph" target="_blank">
+            <span>exmorph</span>
+            <span class="description">tweening and data transformation library</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/supernintendo/wand" target="_blank">
+            <span>wand</span>
+            <span class="description">command line tool for serving individual files over http</span>
+          </a>
+        </li>
+      </ul>
+      <footer>
+        <a href="../">
+          &lt; go back
+        </a>
+      </footer>
+    </main>
+  </body>
 </html>
