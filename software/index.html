@@ -18,11 +18,11 @@
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <style amp-custom>
       ::selection {
-        background: #DDDDDB; /* WebKit/Blink Browsers */
+        background: #1F1F1B; /* WebKit/Blink Browsers */
         color: #302121;
       }
       ::-moz-selection {
-        background: #6748B4; /* Gecko Browsers */
+        background: #1F1F1B; /* Gecko Browsers */
         color: #191111;
       }
       @font-face {
@@ -34,12 +34,12 @@
         src: url(../fonts/ModernDOS8x16.ttf);
       }
       html {
-        background: #220002;
+        background: #272822;
         background-image: url(../img/bg3.png);
         text-align: center;
       }
       main {
-        color: #DDDDD8;
+        color: #CCCCC8;
         display: inline-block;
         font-family: pixelpoiiz, Monaco, Consolas, monospace;
         font-size: 1.325rem;
@@ -48,7 +48,7 @@
         width: 80%;
       }
       a {
-        color: #DDDDDB;
+        color: #ABABAB;
         text-decoration: none;
         margin-left: -1rem;
       }
@@ -59,12 +59,11 @@
         transition: all 1s ease-out;
       }
       a span.description {
-        color: #999999;
         display: none;
         font-family: ModernDOS8x16, Monaco, Consolas, monospace;
         font-size: 1rem;
         margin-left: 1rem;
-        text-shadow: -1px 0 #909;
+        text-shadow: -1px 0 #52555F;
       }
       a:hover {
         -webkit-transition: all 0s ease-in;
@@ -77,8 +76,15 @@
         display: initial;
       }
       a::before {
+        color: #FD7A37;
         content: "▒ ";
         visibility: hidden;
+      }
+      a:hover::before {
+        -webkit-animation: blink 1s infinite;
+        -moz-animation:    blink 1s infinite;
+        -o-animation:      blink 1s infinite;
+        animation:         blink 1s infinite;
       }
       ul li a {
         -webkit-animation: rainbow 12s infinite;
@@ -88,7 +94,7 @@
       }
       ul li a:hover span:not(.description) {
         color: #FD7A37;
-        text-shadow: -0.25rem 0 #9D6ACA, 0 0.25rem #9D6ACA, 0.25rem 0 #9D6ACA, 0 -0.25rem #9D6ACA;
+        text-shadow: -0.25rem 0.5rem #909, 0 0.25rem #909, 0.25rem 0 #909, 0 -0.25rem #909;
       }
       ul li a:hover::before {
         visibility: visible;
@@ -105,7 +111,7 @@
         padding-left: 0;
       }
       h2 {
-        color: #6F4E51;
+        color: #52555F;
         margin: -0.5rem 0 -1.25rem 0;
         text-shadow: 0.25rem 0.25rem #191111;
       }
@@ -115,6 +121,31 @@
       .hide {
         display: none;
       }
+      /* Chrome, Safari, Opera */
+      @-webkit-keyframes blink {
+        0% {
+          opacity: 0;
+        }
+        50%  {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      /* Standard syntax */
+      @keyframes blink {
+        0% {
+          opacity: 0;
+        }
+        50%  {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
       /* Chrome, Safari, Opera */
       @-webkit-keyframes rainbow {
         0% {
