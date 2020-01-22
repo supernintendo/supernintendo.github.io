@@ -122,10 +122,6 @@
         text-decoration: none;
       }
       a:hover {
-        -webkit-animation: rose 1600ms infinite;
-        -moz-animation:    rose 1600ms infinite;
-        -o-animation:      rose 1600ms infinite;
-        animation:         rose 1600ms infinite;
         border-bottom: 2px dotted #EBE9E9;
         color: #EBE9E9;
         text-shadow: 1px 1px #191111;
@@ -150,17 +146,19 @@
         text-align: right;
         margin-right: 0.25rem;
       }
-      ul#links li:first-child a:hover span:first-child {
-        color: #E00B26;
-        text-shadow: 1px 1px #D2C8C8;
+      ul#links li:nth-child(3) a:hover {
+        -webkit-animation: rose 1600ms infinite;
+        -moz-animation:    rose 1600ms infinite;
+        -o-animation:      rose 1600ms infinite;
+        animation:         rose 1600ms infinite;
       }
-      ul#links li:nth-child(2) a:hover span:first-child {
-        color: #467D56;
+      ul#links li:nth-child(3) a:hover span:first-child {
+        color: #D00B16;
         text-shadow: 1px 1px #D2C8C8;
       }
       ul#links li a:hover span:first-child {
-        color: #C0796F;
-        text-shadow: 1px 1px #C52D25;
+        color: #292121;
+        text-shadow: 1px 1px #D2C8C8;
       }
       ul#links li:last-child span:first-child {
         color: #D2C8C8;
