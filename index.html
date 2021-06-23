@@ -29,7 +29,6 @@
       }
       html, body {
         background: #FDFCFC;
-        background-image: url('../img/bg.png');
         color: #333324;
         font-family: serif;
         margin: 0;
@@ -39,32 +38,8 @@
         main {
           border-radius: 100rem;
         }
-        ul#links {
-          margin-right: -0.5rem;
-        }
-        ul#links li {
-          text-align: right;
-        }
-        ul#links li:nth-child(even) {
-          margin-right: 0.5rem;
-        }
-        ul#links li:nth-child(odd) {
-          margin-right: 1.75rem;
-        }
-        ul#links li:first-child {
-          margin-right: -1rem;
-        }
-        ul#links li:nth-child(5) {
-          margin-right: -1.25rem;
-        }
-        ul#social-media-links {
-          margin-left: 1rem;
-        }
         html .hide-on-desktop {
           display: none;
-        }
-        html .site-name {
-          margin-bottom: 4rem;
         }
       }
       @media only screen and (max-width: 640px) {
@@ -72,31 +47,8 @@
           border-radius: 0%;
           margin-top: 0.325rem;
         }
-        ul#links {
-          margin-top: 1.5rem;
-          width: 100%;
-        }
-        ul#links li {
-          text-align: center;
-        }
-        ul#links li span:first-child {
-          position: relative;
-          top: .75rem;
-        }
-        ul#links li:nth-child(odd) {
-          margin-left: 0;
-        }
-        ul#social-media-links {
-          margin-top: 0rem;
-        }
-        ul#social-media-links {
-          margin-left: 0;
-        }
         html .hide-on-mobile {
           display: none;
-        }
-        html .site-name {
-          margin-bottom: 0rem;
         }
       }
       main {
@@ -108,95 +60,28 @@
         max-width: 98vw;
         width: 100%;
       }
-      main ul {
-        margin-top: 25vh;
-      }
-      main h3 {
-        color: #D2C8C8;
-        font-style: italic;
-        top: 16.25vh;
-        text-shadow: 1px 1px #B2A8A8;
-      }
-      main h3 a {
-        color: #D2C8C8;
-      }
-      a {
+      main a {
         color: #333324;
-        text-decoration: none;
-      }
-      a:hover {
-        border-bottom: 2px dotted #EBE9E9;
-        color: #EBE9E9;
-        text-shadow: 1px 1px #191111;
-      }
-      ul {
         display: inline-block;
-        font-size: 2.125rem;
-        list-style: none;
-        padding-left: 0;
-      }
-      ul#links li {
-        font-weight: 600;
         font-family: "UnifrakturCook", serif;
+        font-family: 'Astloch', cursive;
+        font-size: 4.125rem;
+        font-weight: 600;
         letter-spacing: 0.125rem;
         line-height: 2.625rem;
-        margin-top: 0px;
-      }
-      ul#links li span:first-child {
-        color: #D2C8C8;
-        display: inline-block;
-        font-family: 'Astloch', cursive;
+        margin-left: 12.25vw;
+        margin-top: 20vh;
         text-align: right;
-        margin-right: 0.25rem;
+        text-decoration: none;
       }
-      ul#links li:nth-child(3) a:hover {
+      main a:hover {
         -webkit-animation: rose 1600ms infinite;
         -moz-animation:    rose 1600ms infinite;
         -o-animation:      rose 1600ms infinite;
         animation:         rose 1600ms infinite;
-      }
-      ul#links li:nth-child(3) a:hover span:first-child {
-        color: #D00B16;
-        text-shadow: 1px 1px #D2C8C8;
-      }
-      ul#links li a:hover span:first-child {
-        color: #292121;
-        text-shadow: 1px 1px #D2C8C8;
-      }
-      ul#links li:last-child span:first-child {
-        color: #D2C8C8;
-        text-shadow: 1px 1px #B2A8A8;;
-      }
-      ul#social-media-links li {
-        display: inline-block;
-      }
-      ul#social-media-links li.delimiter:after {
-        color: #85D2DF;
-        content: " . "
-      }
-      ul#social-media-links li#head {
-        display: block;
-        margin-bottom: 0.25rem;
-      }
-      ul#social-media-links li#head img {
-        border-radius: 100%;
-      }
-      ul#social-media-links {
-        font-size: 12px;
-      }
-      span#i {
-        display: inline-block;
-        left: 0.275rem;
-        position: relative;
-      }
-      aside#quote {
-        color: #C2B8B8;
-        font-size: 0.825rem;
-        margin: 0 36% 1.5rem 36%;
-        width: 28%;
-      }
-      html body .hide {
-        display: none;
+        border-bottom: 2px dotted #EBE9E9;
+        color: #EBE9E9;
+        text-shadow: 1px 1px #191111;
       }
       @keyframes rose {
         0%   { cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAMAAADdXFNzAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NzA4MUVCOTJFMTNBMTFFN0EzMDI5MzFDN0I4NTA0RUYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NzA4MUVCOTNFMTNBMTFFN0EzMDI5MzFDN0I4NTA0RUYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo3MDgxRUI5MEUxM0ExMUU3QTMwMjkzMUM3Qjg1MDRFRiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo3MDgxRUI5MUUxM0ExMUU3QTMwMjkzMUM3Qjg1MDRFRiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PmFFhMIAAAC3UExURQZfAE8AAJgAAP4AALcAAAEAAdUAAHYAAMcAAGQAAAVXAP///6cAAIgAADYAAPEAAOMAAAhzAAdlAAVMAAhsALJeH/xRUAl6AP4aGr1kIeocHKNWHO4NDf0wMP6NjQeEAAFqAABzALpMHf3Lyv4KCv2srP3x8QRCAP/i4gORAT1YBmONKN40NID7g6ATE1n/eAB8ALzYdcMfH2c7CpBKGbtXIR2fFKI+CrYODsBwhtsREQapDP///0GjgHgAAAA9dFJOU////////////////////////////////////////////////////////////////////////////////wAJL6xfAAABUElEQVR42oTR55KCMBQF4CQ3pkEgFBF73957yfs/10ZAV1D0/CEz30m5A+oUsVVebCOo47lUfrWm+JhXfDFZMekKmvo1L/iLP2QrxrVzn9T2F5xnVHNfBxQHRNS8PHy8HLkC14IHrOblh0IeCp9oYah0i6azAYSGCUoYGGJY07Oxd2dCCBk1IRXsYP9PmA0MZF4uBPM3xxzcHwLk6wlQwrnYm37nDGAwgpBIIhiRh+5rLLnmgaRMvM6Rarq1geQYS0Ipub9GKkn2HQAsdQWtCeHf3tMsjVTy7wDM941xb5MuS+8jjqbTONk6MBy4YInx5u8unn9V1OtFauvFOLiIWzzefiLkPFWq9r5d5pdJHPWiuMWTRMVpFKUxskcdoThO0xS1e5mZPe4WKZeboW1zWwy+eG/1MsPuaa8K7W673dNuz7ntn3FXOO22f8bf/gQYAF7nqb/pn3WfAAAAAElFTkSuQmCC), auto; }
@@ -229,41 +114,7 @@
   <body>
     <div id="main-container">
       <main>
-        <h3 class="site-name hide-on-desktop">matyi.net</h3>
-        <ul id="links" class="plain-list">
-          <li>
-            <span class="hide">m</span>ay
-          </li>
-          <li>
-            <a href="software/">softw<span>A</span>re</a>
-          </li>
-          <li>
-            <a href="https://soundcloud.com/boymoder" target="_blank"><span>T</span><span>unez</span></a>
-          </li>
-          <li>
-            <a href="gallery/">galler<span>Y</span></a>
-          </li>
-          <li>
-            <span>I</span>
-          </li>
-        </ul>
-        <ul id="social-media-links">
-          <li id="head">
-            <amp-img src="img/me.jpg" width="167px" height="167px" />
-            <span class="hide">~</span>
-          </li>
-          <li><em>M. L. L. M.</em></li><br>
-        </ul>
-        <aside id="quote">
-          <i>
-            "The secret of my influence has always been that it remained secret."
-          </i><br /> - Salvador Dali
-        </aside>
-        <h3>
-          <a href="may@matyi.net">
-            may@matyi.net
-          </a>
-        </h3>
+        <a href="#">brb.</a>
       </main>
     </div>
   </body>
