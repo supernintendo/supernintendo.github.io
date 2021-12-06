@@ -1,16 +1,16 @@
-var ghpages = require('gh-pages');
+var ghpages = require("gh-pages");
 
 ghpages.publish(
-  'public',
+  "public",
   {
-    branch: 'gh-pages',
-    repo: 'https://github.com/supernintendo/supernintendo.github.io',
+    branch: "gh-pages",
+    repo: "https://github.com/supernintendo/supernintendo.github.io",
     user: {
-      name: 'May Matyi',
-      email: 'may@matyi.net'
-    }
+      name: "May Matyi",
+      email: "may@matyi.net",
+    },
   },
   () => {
-    console.log('deploy complete wew')
+    console.log("deploy complete wew");
   }
-)
+);
