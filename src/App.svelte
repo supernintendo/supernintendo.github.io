@@ -57,11 +57,12 @@
           I wish I could do whatever I liked behind the curtain of “madness”.
           Then I’d arrange flowers, all day long, I’d paint; pain, love and tenderness,
           I would laugh as much as I feel like at the stupidity of others, and they would
-          all say: “poor thing, she’s crazy!” I would build my world which while I lived,
+          all say, “poor thing, she’s crazy!” I would build my world which, while I lived,
           would be in agreement with all the worlds. The day, or the hour, or the minute
           that I lived would be mine and everyone else’s - my madness would not be an
-          escape from “reality”. ― Frida Kahlo
+          escape from “reality”.
         </p>
+        <div class="align-right"> ― Frida Kahlo</div>
       </aside>
       <nav>
         <ul>
@@ -124,7 +125,7 @@
     padding: 0 4.44rem;
     font-style: italic;
     font-weight: bold;
-    letter-spacing: -0.2rem;
+    letter-spacing: -0.25rem;
     line-height: 1.75rem;
     font-size: 1.5rem;
     text-align: justify;
