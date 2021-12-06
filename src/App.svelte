@@ -8,6 +8,15 @@
     soundcloud: { day: "#eac4ae", night: "#dda2a3" },
     github: { day: "#dee7ec", night: "#b8b3b0" }
   }
+  const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+  ]
   let time = new Date();
   let swatch = colors.default;
   let mainStyle = `--theme-day: ${swatch.day}; --theme-night: ${swatch.night}`;
@@ -39,17 +48,17 @@
   <section>
     <span class="lemonada">
       <header>
-        <div class="align-left"><b>may matyi</b></div>
-        <div>daydrinker</div>
+        <div class="align-left"><b>matyi.net</b></div>
+        <div>{days[time.getDay()]}</div>
         <div class="align-right">{time.toLocaleString()}</div>
       </header>
       <aside>
         <p>
           I wish I could do whatever I liked behind the curtain of “madness”.
-          then I’d arrange flowers, all day long, I’d paint; pain, love and tenderness,
+          Then I’d arrange flowers, all day long, I’d paint; pain, love and tenderness,
           I would laugh as much as I feel like at the stupidity of others, and they would
           all say: “poor thing, she’s crazy!” I would build my world which while I lived,
-          would be in agreement with all the worlds. the day, or the hour, or the minute
+          would be in agreement with all the worlds. The day, or the hour, or the minute
           that I lived would be mine and everyone else’s - my madness would not be an
           escape from “reality”. ― Frida Kahlo
         </p>
@@ -81,6 +90,7 @@
     letter-spacing: -0.125rem;
     background-color: var(--theme-night);
     display: grid;
+    padding: 1rem 0;
     place-items: center;
     overflow-x: hidden;
     width: 100%;
@@ -103,12 +113,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     list-style-type: none;
-    padding: 0 1.5rem;
+    padding: 1rem 1.5rem;
     font-size: 44.4%;
   }
+  header div {
+    padding: 0 0.5rem;
+  }
   aside {
-    color: var(--theme-night);
-    opacity: 0.5;
+    color: var(--theme-day);
     padding: 0 4.44rem;
     font-style: italic;
     font-weight: bold;
@@ -117,7 +129,6 @@
     font-size: 1.5rem;
     text-align: justify;
   }
-
   ul {
     list-style: none;
     padding: 0;
