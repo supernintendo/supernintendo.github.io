@@ -45,13 +45,13 @@
       </header>
       <aside>
         <p>
-          “I don't give a shit what the world thinks.
-          I was born a bitch, I was born a painter, I was born fucked.
-          But I was happy in my way. You did not understand what I am.
-          I am love. I am pleasure, I am essence, I am an idiot,
-          I am an alcoholic, I am tenacious. I am; simply I am
-          ... You are a shit.” <br/>
-          ― Frida Kahlo
+          i wish i could do whatever i liked behind the curtain of “madness”.
+          then i’d arrange flowers, all day long, i’d paint; pain, love and tenderness,
+          i would laugh as much as i feel like at the stupidity of others, and they would
+          all say: “poor thing, she’s crazy!” i would build my world which while i lived,
+          would be in agreement with all the worlds. the day, or the hour, or the minute
+          that i lived would be mine and everyone else’s - my madness would not be an
+          escape from “reality”. ― Frida Kahlo
         </p>
       </aside>
       <nav>
@@ -97,22 +97,24 @@
     max-width: 44.4rem;
     width: 100%;
     min-height: 44.4rem;
-    transition: all 0.5s;
+    transition: all 2s;
   }
   header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     list-style-type: none;
-    padding: 0 0.444rem;
+    padding: 0 1.5rem;
     font-size: 44.4%;
   }
   aside {
+    -webkit-tap-highlight-color: var(--theme-night);
     color: var(--theme-day);
-    padding: 0 8px;
+    padding: 0 4.44rem;
     font-style: italic;
     font-weight: bold;
     letter-spacing: -0.2rem;
-    font-size: 2rem;
+    line-height: 1.75rem;
+    font-size: 1.5rem;
     text-align: justify;
   }
 
