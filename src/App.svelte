@@ -49,7 +49,7 @@
     <span class="lemonada">
       <header>
         <div class="align-left"><b>matyi.net</b></div>
-        <div>{days[time.getDay()]}</div>
+        <div class="align-right">{days[time.getDay()]}</div>
         <div class="align-right">{time.toLocaleString()}</div>
       </header>
       <aside>
@@ -93,7 +93,6 @@
     display: grid;
     padding: 1rem 0;
     place-items: center;
-    overflow-x: hidden;
     width: 100%;
     min-height: 100%;
   }
@@ -107,18 +106,15 @@
     text-align: center;
     max-width: 44.4rem;
     width: 100%;
-    min-height: 44.4rem;
     transition: all 2s;
   }
   header {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 2fr;
     list-style-type: none;
-    padding: 1rem 1.5rem;
+    padding: 0.5rem;
     font-size: 44.4%;
-  }
-  header div {
-    padding: 0 0.5rem;
+    text-align: center;
   }
   aside {
     color: var(--theme-day);

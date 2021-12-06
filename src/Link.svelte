@@ -18,4 +18,7 @@
     color: var(--theme-night);
     transition: all 0.5s;
   }
+  a:hover {
+    text-decoration: line-through;
+  }
 </style>
