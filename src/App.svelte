@@ -45,12 +45,12 @@
       </header>
       <aside>
         <p>
-          i wish i could do whatever i liked behind the curtain of “madness”.
-          then i’d arrange flowers, all day long, i’d paint; pain, love and tenderness,
-          i would laugh as much as i feel like at the stupidity of others, and they would
-          all say: “poor thing, she’s crazy!” i would build my world which while i lived,
+          I wish I could do whatever I liked behind the curtain of “madness”.
+          then I’d arrange flowers, all day long, I’d paint; pain, love and tenderness,
+          I would laugh as much as I feel like at the stupidity of others, and they would
+          all say: “poor thing, she’s crazy!” I would build my world which while I lived,
           would be in agreement with all the worlds. the day, or the hour, or the minute
-          that i lived would be mine and everyone else’s - my madness would not be an
+          that I lived would be mine and everyone else’s - my madness would not be an
           escape from “reality”. ― Frida Kahlo
         </p>
       </aside>
@@ -107,8 +107,8 @@
     font-size: 44.4%;
   }
   aside {
-    -webkit-tap-highlight-color: var(--theme-night);
-    color: var(--theme-day);
+    color: var(--theme-night);
+    opacity: 0.5;
     padding: 0 4.44rem;
     font-style: italic;
     font-weight: bold;
