@@ -67,7 +67,7 @@
       <nav>
         <ul>
           <li><Link name="github" onHover={applySwatch} onUnhover={removeSwatch} href="https://github.com/supernintendo" /></li>
-          <li><Link name="soundcloud" onHover={applySwatch} onUnhover={removeSwatch} href="https://soundcloud.com/boymoder" /></li>
+          <li><Link name="soundcloud" onHover={applySwatch} onUnhover={removeSwatch} href="https://soundcloud.com/kewlbunny" /></li>
           <li><Link name="contact" onHover={applySwatch} onUnhover={removeSwatch} href="mailto:may@matyi.net" /></li>
         </ul>
       </nav>
