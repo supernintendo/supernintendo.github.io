@@ -5,7 +5,6 @@
   const colors = {
     default: { day: "#ffe2db", night: "#d9a7c6" },
     contact: { day: "#daddee", night: "#a6adc3" },
-    soundcloud: { day: "#eac4ae", night: "#dda2a3" },
     github: { day: "#dee7ec", night: "#b8b3b0" }
   }
   const days = [
@@ -67,7 +66,6 @@
       <nav>
         <ul>
           <li><Link name="github" onHover={applySwatch} onUnhover={removeSwatch} href="https://github.com/supernintendo" /></li>
-          <li><Link name="soundcloud" onHover={applySwatch} onUnhover={removeSwatch} href="https://soundcloud.com/kewlbunny" /></li>
           <li><Link name="contact" onHover={applySwatch} onUnhover={removeSwatch} href="mailto:may@matyi.net" /></li>
         </ul>
       </nav>
@@ -101,7 +99,7 @@
     background-color: var(--theme-day);
     color: var(--theme-night);
     display: grid;
-    line-height: 3rem;
+    line-height: 4rem;
     font-size: 4.44rem;
     place-items: center;
     text-align: center;
